@@ -1,0 +1,93 @@
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/aceite">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palet completos"
+            android:id="@+id/textView"
+            android:layout_marginTop="69dp"
+            android:autoText="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#2d783b" android:layout_below="@+id/spinner" android:layout_toLeftOf="@+id/button"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_marginTop="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total envasado (l):"
+            android:id="@+id/textView2"
+            android:textColor="#2D783B"
+            android:textStyle="bold"
+            android:textSize="18sp" android:layout_above="@+id/textView4" android:layout_alignLeft="@+id/textView"
+            android:layout_marginBottom="77dp"/>/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginTop="0dp"
+            android:layout_alignRight="@+id/buttonOk"
+            android:layout_alignEnd="@+id/buttonOk"
+            android:layout_alignLeft="@+id/editText" android:layout_alignBottom="@+id/textView2"
+            android:textColor="#000000"/>/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/buttonOk"
+            android:layout_alignBottom="@+id/editText" android:layout_alignParentRight="true"
+            android:layout_marginRight="41dp"/>
+
+    <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignRight="@+id/button"
+            android:layout_alignEnd="@+id/button" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceite restante (l)"
+            android:id="@+id/textView4"
+            android:textColor="#2D783B"
+            android:textStyle="bold"
+            android:textSize="18sp" android:layout_above="@+id/button" android:layout_alignLeft="@+id/textView2"
+            android:layout_marginBottom="57dp"/>/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3" android:layout_alignLeft="@+id/textView3"
+            android:textColorHighlight="#000000" android:textColor="#000000"/>/>
+
+
+</RelativeLayout>

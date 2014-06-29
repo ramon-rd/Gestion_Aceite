@@ -1,0 +1,85 @@
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/aceite">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente:"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="101dp"
+            android:textSize="18dp"
+            android:textStyle="bold" android:textColor="#2D783B"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#2D783B" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:id="@+id/textView3"
+            android:layout_marginTop="105dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#2D783B"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCliente"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_marginLeft="68dp" />
+
+    <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextCantidad"
+            android:layout_above="@+id/textView3"
+            android:layout_alignLeft="@+id/editTextCliente"
+            android:layout_alignStart="@+id/editTextCliente" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTextFecha"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/editTextCantidad"
+            android:layout_alignStart="@+id/editTextCantidad"
+            android:layout_alignRight="@+id/editTextCantidad"
+            android:layout_alignEnd="@+id/editTextCantidad" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insertar Pedido"
+            android:id="@+id/buttonIns"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_marginBottom="64dp" />
+
+
+
+</RelativeLayout>

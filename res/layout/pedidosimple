@@ -1,0 +1,25 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:baselineAligned="false">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="97dp" android:background="#ffffff">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Cliente"
+                android:id="@+id/textView" android:layout_centerVertical="true" android:layout_toLeftOf="@+id/proveedor"
+                android:layout_marginRight="48dp" android:textAlignment="center" android:textSize="18dp"
+                android:textColor="#010101" android:gravity="center_vertical|center_horizontal"/>
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="New Text"
+                android:id="@+id/proveedor"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#010101" android:textSize="18dp" android:layout_alignTop="@+id/textView"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

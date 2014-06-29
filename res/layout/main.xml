@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/aceite">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Producción realizada"
+            android:id="@+id/produccion"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="49dp"
+            android:onClick="lanzarAcercaDe"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo pedido"
+            android:id="@+id/button"
+            android:layout_below="@+id/produccion"
+            android:layout_alignLeft="@+id/produccion"
+            android:layout_alignStart="@+id/produccion"
+            android:layout_marginTop="63dp"
+            android:onClick="lanzarNuevoPedido" />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis pedidos"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:layout_marginTop="66dp" android:onClick="lanzarConsultarPedido"/>
+
+
+
+</RelativeLayout>
